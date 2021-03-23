@@ -14,12 +14,12 @@
 	</head>
 	<body>
 		<center>
-			<video autoplay loop class="video">
+			<video autoplay muted loop class="video">
 				<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
 			</video>
 			<script>
 				document.addEventListener("DOMContentLoaded", function(event) {
-			  		document.querySelector("video.video").play();
+					document.querySelector("video.video").addEventListener("mouseover", (e) => { e.target.muted = false; 
 				});
 			</script>
 		</center>
