@@ -1,8 +1,54 @@
 <!DOCTYPE html>
-<body>
-	<div class="video-background">
-    <audio id="player"autoplay loop>
-      <source src="https://i.fiery.me/7OOW8.mp3" type="audio/mp3">
-    </audio>
-  </div>
-</body>
+<html>
+	<head>
+		<title>( ͡° ͜ʖ ͡°)</title>
+		<style>
+			.video {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
+			
+			.autoplay {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
+		</style>
+	</head>
+	<audio id="divAudio">
+		<source src="http://hub.hexality.cf/pepeBread/rickaudio.mp3" type="audio/mp3">
+  	</audio>
+  	<script>
+       		var vAudio = document.getElementById("divAudio");
+     			function playMusic()
+     		{
+       		vAudio.play();
+     		}
+  	</script>
+  	<div onmouseover="playMusic()">
+		<body>
+			<center>
+				<canvas class="autoplay">
+				</canvas>
+			
+				<video vAudio.onload="this.play()" muted loop class="video">
+					<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
+				</video>
+                <script>
+                  document.addEventListener("vAudio.play()", function(event) {
+                      document.querySelector("video.video").play();
+                </script>
+				<!--<script>
+					document.addEventListener("DOMContentLoaded", function(event) {
+						document.querySelector("video.video").addEventListener("mouseover", (e) => { e.target.muted = false; 
+					});
+				</script>-->
+			</center>
+		</body>
+	</div>
+</html>
