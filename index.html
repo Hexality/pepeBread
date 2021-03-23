@@ -20,19 +20,31 @@
 			}
 		</style>
 	</head>
-	<body>
-		<center>
-			<canvas class="autoplay">
-			</canvas>
+	<audio id="divAudio">
+		<source src="rickaudio.mp3" type="audio/mp3">
+  	</audio>
+  	<script>
+       		var vAudio = document.getElementById("divAudio");
+     			function playMusic()
+     		{
+       		vAudio.play();
+     		}
+  	</script>
+  	<div onmouseenter="playMusic()">
+		<body>
+			<center>
+				<canvas class="autoplay">
+				</canvas>
 			
-			<video autoplay muted loop class="video">
-				<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
-			</video>
-			<script>
-				document.addEventListener("DOMContentLoaded", function(event) {
-					document.querySelector("video.video").addEventListener("mouseover", (e) => { e.target.muted = false; 
-				});
-			</script>
-		</center>
-	</body>
+				<video autoplay muted loop class="video">
+					<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
+				</video>
+				<script>
+					document.addEventListener("DOMContentLoaded", function(event) {
+						document.querySelector("video.video").addEventListener("mouseover", (e) => { e.target.muted = false; 
+					});
+				</script>
+			</center>
+		</body>
+	</div>
 </html>
