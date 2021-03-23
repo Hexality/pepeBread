@@ -23,20 +23,20 @@
 	<audio id="divAudio">
 		<source src="rickaudio.mp3" type="audio/mp3">
   	</audio>
-  	<script>
+  	<script onload="">
        		var vAudio = document.getElementById("divAudio");
      			function playMusic()
      		{
        		vAudio.play();
      		}
   	</script>
-  	<div onmouseover="playMusic()">
+  	<div onmouseout="playMusic()">
 		<body>
 			<center>
 				<canvas class="autoplay">
 				</canvas>
 			
-				<video onmouseover="this.play()" muted loop class="video">
+				<video vAudio.onload="this.play()" muted loop class="video">
 					<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
 				</video>
 				<script>
