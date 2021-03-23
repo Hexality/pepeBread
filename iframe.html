@@ -20,7 +20,7 @@
 			}
 		</style>
 	</head>
-	<audio id="divAudio">
+	<audio id="divAudio" onplaying="document.querySelector("video.video").play();">
 		<source src="rickaudio.mp3" type="audio/mp3">
   	</audio>
   	<script>
@@ -30,19 +30,19 @@
        		vAudio.play();
      		}
   	</script>
-  	<div onmouseover="playMusic()">
+  	<div onmouseout="playMusic()">
 		<body>
 			<center>
 				<canvas class="autoplay">
 				</canvas>
 			
-				<video vAudio.onload="this.play()" muted loop class="video">
+				<video muted loop class="video">
 					<source src="https://i.fiery.me/i2mzf.mp4" type="video/mp4">
 				</video>
-                <script>
+                <!--<script>
                   document.addEventListener("vAudio.play()", function(event) {
                       document.querySelector("video.video").play();
-                </script>
+                </script>-->
 				<!--<script>
 					document.addEventListener("DOMContentLoaded", function(event) {
 						document.querySelector("video.video").addEventListener("mouseover", (e) => { e.target.muted = false; 
